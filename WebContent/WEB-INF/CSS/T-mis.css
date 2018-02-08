@@ -1,0 +1,41 @@
+body {
+ scrollbar-base-color: color;
+ scrollbar-track-color: #6699cc;
+ scrollbar-face-color: #F0F0F6;
+ scrollbar-highlight-color: #F0F0F6;
+ scrollbar-3dlight-color: #6699cc;
+ scrollbar-darkshadow-color: #6699cc;
+ scrollbar-shadow-color: #F0F0F6;
+ scrollbar-arrow-color: #6699cc;
+ font-family: "Verdana", "Arial", "Times New Roman";
+ font-size: 9pt;
+ line-height: normal;
+ background-repeat:repeat;
+ background-attachment:fixed;}
+
+Table
+{
+ font-family: "Verdana", "Arial", "Times New Roman";
+ font-size: 9pt;
+ line-height: normal;
+}
+A:link {
+	TEXT-DECORATION: none;
+; color: #0000FF
+}
+A:visited {
+	TEXT-DECORATION: none
+; color: #0000FF
+}
+
+.select {  background-color: #F0F0F6; height: 15px; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+.text {  background-color: #F0F0F6; height: 15px; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+.textarea {  background-color: #F0F0F6; border: #000000; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+.nobordertext {  background-color: #FFFFFF; height: 15px; text-align: center; border-style: solid; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px}
+.noborderamt {  background-color: #FFFFFF; height: 15px; text-align: right; border-style: solid; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px}
+.shouye {  background-color: #FFFFFF; height: 15px; text-align: left; color: #666666; border-style: solid; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px}
+.readonlytextarea {  background-color: #F0F0F6; color: #3D3D3D; border: #000000; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; font-style: normal}
+.readonlytext {  background-color: #F0F0F6; height: 15px; color: #3D3D3D; border: #000000; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; font-style: normal}
+.readonlyamtnoborder {  background-color: #FFFFFF; height: 15px; text-align: right; color: #626262; border-style: solid; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px}a:hover {  color: #FF0000}
+.readonlytextnoborder {  background-color: #FFFFFF; height: 15px; text-align: center; color: #626262; border-style: solid; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px}a:hover {  color: #FF0000}
+.button {  background-color: #CCCCCC; text-align: center; border: 1px outset; vertical-align: baseline; height: 18px; color: #000000; clip:   rect(  0px ); cursor: hand; margin-top: 0px; padding-top: 1px; border-color: #FFFFFF #000000 #000000 #FFFFFF}

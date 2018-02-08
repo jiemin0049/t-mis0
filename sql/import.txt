@@ -1,0 +1,1 @@
+copy teller from 'D:/Entwicklung/workspace/t-mis0/sql/teller.txt' WITH DELIMITER AS ',' CSV QUOTE AS '"';

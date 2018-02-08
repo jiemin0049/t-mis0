@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+      http://www.springframework.org/schema/beans/spring-beans-3.0.xsd  
+      http://www.springframework.org/schema/context  
+      http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<import resource="classpath:org/jz/spring/learn/bean1.xml" />
+
+	<bean id="car" class="org.jz.spring.learn.Car" p:brand="BMW"
+		p:color="black" p:maxSpeed="200" />
+
+	<bean id="car2" class="org.jz.spring.learn.beanlifecycle.Car2"
+		scope="singleton" p:brand="Redflag CA72" p:color="black" p:maxSpeed="200" />
+
+	<bean id="carFactoryBean" class="org.jz.spring.learn.CarFactoryBean"
+		p:carInfo="Ford Fiesta,200,BLACK" />
+
+	<!-- constructor IoC -->
+	<bean id="car3" class="org.jz.spring.learn.Car">
+		<constructor-arg type="java.lang.String" value="RedFlag CA72" />
+		<constructor-arg type="java.lang.String" value="GREEN" />
+		<constructor-arg type="double" value="200" />
+	</bean>
+
+	<bean id="boss" class="org.jz.spring.learn.Boss">
+		<property name="car" ref="car" />
+		<property name="favorites">
+			<list>
+				<value>read</value>
+				<value>race</value>
+				<value>golf</value>
+			</list>
+		</property>
+		<property name="hobby">
+			<set>
+				<value>football</value>
+				<value>swim</value>
+			</set>
+		</property>
+		<property name="jobs">
+			<map>
+				<entry key="AM" value="meeting" />
+				<entry key="PM" value="Read paper" />
+			</map>
+		</property>
+	</bean>
+
+	<!-- Method replace -->
+	<bean id="boss3" class="org.jz.spring.learn.methodreplace.Boss3">
+		<replaced-method name="getCar" replacer="boss4" />
+	</bean>
+	<bean id="boss4" class="org.jz.spring.learn.methodreplace.BossReplace" />
+</beans>  
